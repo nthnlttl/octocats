@@ -1,0 +1,128 @@
+:root {
+    --primary-gray: #cacaca;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+   width: 100%;
+}
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.authors > li > a {
+    display: inline-block;
+    width: 30px;
+    // display: none;
+}
+
+.octocat {
+    display: inline-block;
+    width: 30%;
+    // height: 180px;
+    // border: gray;
+    // border-radius: 3px;    
+    // border: 1px solid gray;
+    // margin-bottom: 100px;
+    // margin-right: 10px;
+}
+
+// .octodex {
+// position: relative;
+// }
+
+// li a {
+//     display: inline-block;
+// }
+
+// ul img {
+//     display: inline-block;
+//     width: 10rem;
+//     height: 10rem;
+//     padding-top: 10px;
+//     margin-bottom: 20px;
+//     padding-left: 20px;
+// }
+
+.image-caption {
+
+    text-align: right;
+    // display: inline-block;
+    //     float: none;
+//    position: absolute;
+//    width: 200px;
+//    bottom: -10x;
+//    right: 20px;
+}
+
+div a {
+    font-weight: bold;
+    color: black;
+}
+
+span {
+    font-weight: bold;
+    color: gray;
+   
+}
+.image-number{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0.5;
+}
+.image-number:before {
+   
+    content: "#";
+}
+
+.image-footer {
+    position: relative;
+    border-bottom: solid 1px var(--primary-gray);
+    padding-top:15px;
+    padding-bottom: 15px;
+    // // position: relative;
+    // display: inline-block;
+    // width: 200px;
+}
+
+.authors img {
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.octocat > a {
+    display: inline-block;
+    border: solid 2px #cacaca; 
+    border-radius: 3px;
+    position: relative;
+}
+
+.octocat > a::after {
+    content: '';
+    height: 0;
+    width: 0;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-top: solid 10px  #cacaca;
+    position: absolute;
+    top: 100%;
+    right: 1%;
+}
+
+.authors {
+    display: inline-block;
+}
+
+.image-caption {
+    text-align: right;
+}
